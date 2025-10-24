@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 
 export default defineConfig({
-  base: "/sae301/", // ← remplace par le nom exact de ton repo GitHub
+  base: "/sae301/",
   build: {
     rollupOptions: {
       input: {
