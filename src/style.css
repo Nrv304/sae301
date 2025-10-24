@@ -1,1 +1,20 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
+
+@layer base {
+    :root{
+        --clr-white: oklch(100% 0.00011 271.152);
+        --clr-black: oklch(0% 0 0);
+        --clr-gray: oklch(59.987% 0.00007 271.152);
+        --clr-red: oklch(62.793% 0.25768 29.223);
+        --font-blinker: 'Blinker', sans-serif;
+    }
+}
+
+@theme inline {
+    --color-background: var(--clr-white);
+    --color-text: var(--clr-black);
+    --color-border: var(--clr-gray);
+    --color-accent: var(--clr-red);
+    --font-blinker: var(--font-blinker);
+}
